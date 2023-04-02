@@ -40,9 +40,9 @@ GET /clients: Retorna a lista de todos os clientes cadastrados.
 
 POST /clients: Cria um novo cliente e retorna os dados do cliente criado.
 
-PUT /clients/:id: Atualiza um cliente específico pelo seu **id** e retorna os dados do cliente atualizado.
+PUT /clients/:clientId : Atualiza um cliente específico pelo seu **id** e retorna os dados do cliente atualizado.
 
-DELETE /clients/:id: Deleta um cliente específico pelo seu **id**.
+DELETE /clients/:clientId : Deleta um cliente específico pelo seu **id**.
 
 ## Contacts
 GET /client/:clientId/contacts: Retorna a lista de todos os contatos vinculados a um client especifico.
