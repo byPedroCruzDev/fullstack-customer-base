@@ -36,14 +36,20 @@ Isso iniciará a aplicação em modo de desenvolvimento na porta 3000. Você pod
 # Endpoints
 ##Clients
 GET /clients: Retorna a lista de todos os clientes cadastrados.
+
 POST /clients: Cria um novo cliente e retorna os dados do cliente criado.
+
 PUT /clients/:id: Atualiza um cliente específico pelo seu **id** e retorna os dados do cliente atualizado.
+
 DELETE /clients/:id: Deleta um cliente específico pelo seu **id**.
 
 ##Contacts
 GET /client/:clientId/contacts: Retorna a lista de todos os contatos vinculados a um client especifico.
+
 POST /clients/:clientId/contacts: Cria um novo contato para um cliente específico e retorna os dados do contato criado.
+
 PUT /clients/:clientId/contacts/:id: Atualiza um contato específico pelo seu ID para um cliente específico e retorna os dados do contato atualizado.
+
 DELETE clients/:clientId/contacts/:contactId: Deleta um contato específico de um client pelo seu **id**
 
 
