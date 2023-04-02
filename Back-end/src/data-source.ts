@@ -3,15 +3,11 @@ import { type } from "os";
 import "dotenv/config";
 import "reflect-metadata";
 import { DataSource, DataSourceOptions } from "typeorm";
-import path from "path";
-
+import { Client } from "./entities/clients.entity";
+import { Contact } from "./entities/contacts.entity";
+import { CreateTable1679955772125 } from "./migrations/1679955772125-CreateTable";
+import { deleteColumn1680227074108 } from "./migrations/1680227074108-deleteColumn";
 const dataSourceConfig = (): DataSourceOptions => {
-  const entitiesPath: string = path.join(__dirname, "./entities/**.{ts,js}");
-  const migrationsPath: string = path.join(
-    __dirname,
-    "./migrations/**.{ts,js}"
-  );
-
   const dbUrl: string | undefined = process.env.DATABASE_URL;
 
   if (!dbUrl) {
@@ -24,7 +20,7 @@ const dataSourceConfig = (): DataSourceOptions => {
       type: "sqlite",
       database: ":memory:",
       synchronize: true,
-      entities: [entitiesPath],
+      entities: ["src/entities/*.ts"],
     };
   }
   return {
@@ -32,8 +28,8 @@ const dataSourceConfig = (): DataSourceOptions => {
     url: dbUrl,
     synchronize: false,
     logging: true,
-    migrations: [migrationsPath],
-    entities: [entitiesPath],
+    migrations: [CreateTable1679955772125, deleteColumn1680227074108],
+    entities: [Client, Contact],
   };
 };
 

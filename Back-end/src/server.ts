@@ -6,7 +6,7 @@ AppDataSource.initialize()
   .then(() => {
     console.log("conected");
     app.listen(3000, () => {
-      console.log("Server is running");
+      console.log("Server is running in port 3000");
     });
   })
   .catch((err) => {
