@@ -9,13 +9,14 @@ Em seguida, abra um terminal ou prompt de comando e execute o seguinte comando p
 
 
 git clone 
+
 https://github.com/byPedroCruzDev/fullstack-customer-base
-Acesse a pasta do projeto com o seguinte comando:
 
 Em seguida, instale as dependências do projeto com o comando:
 
 
 **npm install**
+
 Configuração do Banco de Dados
 Antes de executar a aplicação, você precisa configurar o banco de dados. Certifique-se de ter o postegreSQL ou outro banco de dados compatível instalado em sua máquina.
 
@@ -34,7 +35,7 @@ Após instalar as dependências e configurar o banco de dados, você pode execut
 Isso iniciará a aplicação em modo de desenvolvimento na porta 3000. Você pode acessar a aplicação no seu navegador em http://localhost:3000.
 
 # Endpoints
-##Clients
+## Clients
 GET /clients: Retorna a lista de todos os clientes cadastrados.
 
 POST /clients: Cria um novo cliente e retorna os dados do cliente criado.
@@ -43,7 +44,7 @@ PUT /clients/:id: Atualiza um cliente específico pelo seu **id** e retorna os d
 
 DELETE /clients/:id: Deleta um cliente específico pelo seu **id**.
 
-##Contacts
+## Contacts
 GET /client/:clientId/contacts: Retorna a lista de todos os contatos vinculados a um client especifico.
 
 POST /clients/:clientId/contacts: Cria um novo contato para um cliente específico e retorna os dados do contato criado.
@@ -53,7 +54,7 @@ PUT /clients/:clientId/contacts/:id: Atualiza um contato específico pelo seu ID
 DELETE clients/:clientId/contacts/:contactId: Deleta um contato específico de um client pelo seu **id**
 
 
-Contribuindo
+# Contribuindo
 Se você quiser contribuir com a aplicação, sinta-se à vontade para enviar um pull request com suas modificações. Certifique-se de testar suas alterações e seguir as boas práticas de desenvolvimento de software.
 
 Licença
