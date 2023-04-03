@@ -53,6 +53,15 @@ PUT /clients/:clientId/contacts/:id: Atualiza um contato específico pelo seu ID
 
 DELETE clients/:clientId/contacts/:contactId: Deleta um contato específico de um client pelo seu **id**
 
+## Criação de cliente
+
+{
+ "fullName": "name",
+ "phone": "9999-999",
+ "email":"email@email.com"
+}
+A criação de cliente pode ser feita com ou sem a associação de um contato
+
 
 # Contribuindo
 Se você quiser contribuir com a aplicação, sinta-se à vontade para enviar um pull request com suas modificações. Certifique-se de testar suas alterações e seguir as boas práticas de desenvolvimento de software.
