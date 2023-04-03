@@ -57,9 +57,12 @@ DELETE clients/:clientId/contacts/:contactId: Deleta um contato específico de u
 
 {
  "fullName": "name",
+ 
  "phone": "9999-999",
+ 
  "email":"email@email.com"
 }
+
 A criação de cliente pode ser feita com ou sem a associação de um contato
 
 
